@@ -1,100 +1,35 @@
+# 🎲 Gerador de Usuários Aleatórios (GUI)
 
-📘 Gerador de Usuários (Python + Tkinter)
+Uma aplicação desktop simples desenvolvida em **Python** que gera perfis de usuários fictícios (com dados brasileiros) e os armazena automaticamente em um arquivo JSON.
 
-Este projeto é um gerador de usuários utilizando a biblioteca Faker, com interface gráfica construída em Tkinter.
-A cada clique no botão, o sistema cria uma pessoa aleatória com:
+## 📋 Sobre o Projeto
 
-Nome completo
+Este projeto utiliza a biblioteca `Faker` para criar dados realistas e `Tkinter` para a interface gráfica. O objetivo é fornecer uma ferramenta rápida para gerar "massa de dados" para testes ou preenchimento de bancos de dados, salvando o histórico das gerações.
 
-Idade
+### ✨ Funcionalidades
 
-Profissão
+* **Geração de Dados:** Cria Nome, Idade (18-35) e Profissão.
+* **Localização:** Dados gerados no padrão brasileiro (`pt-BR`).
+* **Persistência:** Salva cada usuário gerado em uma lista acumulativa no arquivo `usuarios.json`.
+* **Interface Gráfica:** Visualização imediata dos dados gerados na tela.
 
-E registra todos os usuários gerados em um arquivo JSON (usuarios.json).
+## 🛠️ Tecnologias Utilizadas
 
-🖼️ Interface (Tkinter)
+* [Python 3](https://www.python.org/)
+* [Tkinter](https://docs.python.org/3/library/tkinter.html) (Interface Gráfica)
+* [Faker](https://faker.readthedocs.io/) (Geração de dados)
+* [Pillow (PIL)](https://python-pillow.org/) (Manipulação de imagens/ícones)
+* JSON (Armazenamento de dados)
 
-A aplicação possui:
+## 🚀 Como Executar
 
-✔️ Janela gráfica
-✔️ Botão para gerar novos usuários
-✔️ Exibição dos dados criados
-✔️ Ícone personalizado
+### Pré-requisitos
 
-🚀 Funcionalidades
+Certifique-se de ter o Python instalado em sua máquina.
 
-Gera dados realistas utilizando Faker (nome e profissão brasileiros).
+### 1. Instalação das Dependências
 
-Interface intuitiva construída com Tkinter.
+Abra o terminal na pasta do projeto e instale as bibliotecas necessárias executando:
 
-Salva todos os usuários criados em um arquivo usuarios.json.
-
-Sistema totalmente offline.
-
-Código simples e fácil de modificar.
-
-📦 Tecnologias Utilizadas
-
-Python 3
-
-Tkinter (GUI)
-
-Faker
-
-Pillow (para carregar o ícone da janela)
-
-📥 Instalação
-
-Clone ou baixe o repositório:
-
-git clone <seu-repositorio>
-
-
-Instale as dependências:
-
-pip install faker pillow
-
-
-Tenha certeza de que o diretório contém a imagem:
-
-images/imgpy.png
-
-
-Execute o programa:
-
-python app.py
-
-🗂️ Estrutura do Projeto
-📁 projeto/
-├── app.py
-├── usuarios.json
-├── README.md
-└── images/
-    └── imgpy.png
-
-📝 Como o Programa Funciona
-
-O usuário clica no botão Gerar um usuário
-
-A função criar_pessoa() gera:
-
-Nome
-
-Idade (entre 18 e 35)
-
-Profissão
-
-A interface atualiza os dados na tela
-
-O usuário é salvo no usuarios.json através da função salvar_usuarios()
-
-⚠️ Observações Importantes
-
-Tkinter não funciona no Google Colab, então o projeto deve ser executado localmente.
-
-Se a imagem não carregar, verifique o caminho: images/imgpy.png.
-
-📄 Licença
-
-Este projeto está sob a licença MIT.
-Sinta-se à vontade para usar, estudar e modificar.
+```bash
+pip install faker Pillow
