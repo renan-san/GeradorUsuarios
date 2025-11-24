@@ -6,6 +6,12 @@ Uma aplicação desktop simples desenvolvida em **Python** que gera perfis de us
 
 Este projeto utiliza a biblioteca `Faker` para criar dados realistas e `Tkinter` para a interface gráfica. O objetivo é fornecer uma ferramenta rápida para gerar "massa de dados" para testes ou preenchimento de bancos de dados, salvando o histórico das gerações.
 
+### Interface da Aplicação
+
+Abaixo está a interface gráfica simples da aplicação após gerar um usuário:
+
+![Interface Gráfica do Gerador](image_1.png)
+
 ### ✨ Funcionalidades
 
 * **Geração de Dados:** Cria Nome, Idade (18-35) e Profissão.
